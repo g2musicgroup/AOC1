@@ -7,17 +7,17 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		397BA31216F407970047F233 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 397BA31116F407970047F233 /* UIKit.framework */; };
-		397BA31416F407970047F233 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 397BA31316F407970047F233 /* Foundation.framework */; };
-		397BA31616F407970047F233 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 397BA31516F407970047F233 /* CoreGraphics.framework */; };
 		397BA31C16F407970047F233 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 397BA31A16F407970047F233 /* InfoPlist.strings */; };
 		397BA31E16F407970047F233 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 397BA31D16F407970047F233 /* main.m */; };
-		397BA32216F407970047F233 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 397BA32116F407970047F233 /* AppDelegate.m */; };
 		397BA32416F407970047F233 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 397BA32316F407970047F233 /* Default.png */; };
 		397BA32616F407970047F233 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 397BA32516F407970047F233 /* Default@2x.png */; };
 		397BA32816F407970047F233 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 397BA32716F407970047F233 /* Default-568h@2x.png */; };
-		397BA32B16F407970047F233 /* BookViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 397BA32A16F407970047F233 /* BookViewController.m */; };
 		397BA32E16F407970047F233 /* ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 397BA32C16F407970047F233 /* ViewController.xib */; };
+		397BA33616F4119A0047F233 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 397BA31516F407970047F233 /* CoreGraphics.framework */; };
+		397BA33716F4119E0047F233 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 397BA31316F407970047F233 /* Foundation.framework */; };
+		397BA33816F411A20047F233 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 397BA31116F407970047F233 /* UIKit.framework */; };
+		397BA33B16F412610047F233 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 397BA32116F407970047F233 /* AppDelegate.m */; };
+		397BA33D16F415090047F233 /* BookViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 397BA32A16F407970047F233 /* BookViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -44,9 +44,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				397BA31216F407970047F233 /* UIKit.framework in Frameworks */,
-				397BA31416F407970047F233 /* Foundation.framework in Frameworks */,
-				397BA31616F407970047F233 /* CoreGraphics.framework in Frameworks */,
+				397BA33616F4119A0047F233 /* CoreGraphics.framework in Frameworks */,
+				397BA33716F4119E0047F233 /* Foundation.framework in Frameworks */,
+				397BA33816F411A20047F233 /* UIKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -174,8 +174,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				397BA31E16F407970047F233 /* main.m in Sources */,
-				397BA32216F407970047F233 /* AppDelegate.m in Sources */,
-				397BA32B16F407970047F233 /* BookViewController.m in Sources */,
+				397BA33B16F412610047F233 /* AppDelegate.m in Sources */,
+				397BA33D16F415090047F233 /* BookViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
