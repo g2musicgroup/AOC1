@@ -40,6 +40,23 @@
         NSLog(@"cars are numbers, you cant use them, get back to number crunching");
     }
     
+    /* Step 4 */
+    NSLog(@"Step 4");
+    int dale = 20;
+    if (dale == 20)
+    {
+        NSLog(@"%d is the new winner!", dale);
+    }
+    else if (dale > 20)
+    {
+        NSLog(@"%d is not the new winer", dale);
+    }
+    else
+    {
+        int off = (dale-20);
+        NSLog(@"You seem to have %d hopes too many", off);
+    };
+    
     
     self.window = [[[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]] autorelease];
     // Override point for customization after application launch.
