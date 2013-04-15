@@ -76,6 +76,23 @@
         };
     };
     
+    /* step 7 */
+    NSLog(@"Step 7");
+    int power = 15;
+    bool dead = TRUE;
+    do {
+        NSLog(@"Are you still Alive?!");
+        while ( power > 12 )
+        {
+            power--;
+            NSLog(@"::Chris:: Yes");
+        }
+        NSLog(@"No!");
+        dead = FALSE;
+    } while (power > 12);
+    
+    NSLog(@"Dead!");
+    
     self.window = [[[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]] autorelease];
     // Override point for customization after application launch.
     self.viewController = [[[ViewController alloc] initWithNibName:@"ViewController" bundle:nil] autorelease];
