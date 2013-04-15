@@ -57,6 +57,24 @@
         NSLog(@"You seem to have %d hopes too many", off);
     };
     
+    /* step 5 */
+    NSLog(@"Step 5");
+    for (int x=0;x < 11; x++)
+    {
+        NSLog(@"%d attempt at performing a single loop", x);
+    };
+    
+    /* step 6 */
+    NSLog(@"Step 6");
+    for (int y=40;y>0;y--)
+    {
+        NSLog(@"%d is great", y);
+        while (y<30) {
+            y = y-2;
+            NSLog(@"%d is great", y);
+            if (y <= 10) { break; };
+        };
+    };
     
     self.window = [[[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]] autorelease];
     // Override point for customization after application launch.
