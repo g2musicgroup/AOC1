@@ -26,6 +26,21 @@
     float energy = 3.14159265359;
     NSLog(@"%d Natural energy is good, but %.2f is best!", (int)energy,(float)energy);
     
+    /* Step 3 */
+    NSLog(@"Step 3");
+    int cars = 5;
+    bool editable = YES;
+    
+    if ((cars > 0)&&(editable == YES))
+    {
+        NSLog(@"Please fill up until you are full");
+    }
+    else if ((cars == energy) || (editable == NO))
+    {
+        NSLog(@"cars are numbers, you cant use them, get back to number crunching");
+    }
+    
+    
     self.window = [[[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]] autorelease];
     // Override point for customization after application launch.
     self.viewController = [[[ViewController alloc] initWithNibName:@"ViewController" bundle:nil] autorelease];
