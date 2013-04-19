@@ -91,6 +91,45 @@
         bookTopicsLabel.backgroundColor     = [UIColor colorWithRed:0.9 green:0.9 blue:0.9 alpha:1] /*#cccccc*/;
         bookTopicsText.backgroundColor      = [UIColor colorWithRed:0.8 green:0.8 blue:0.8 alpha:1] /*#cccccc*/;
         
+        // Label Text Colors
+        bookTitle.textColor         = [UIColor whiteColor];
+        bookAuthorLabel.textColor   = [UIColor blackColor];
+        bookAuthorText.textColor    = [UIColor blackColor];
+        bookPubLabel.textColor      = [UIColor blackColor];
+        bookPubText.textColor       = [UIColor blackColor];
+        bookSummaryLabel.textColor  = [UIColor blackColor];
+        bookSummaryText.textColor   = [UIColor blackColor];
+        bookTopicsLabel.textColor   = [UIColor blackColor];
+        bookTopicsText.textColor    = [UIColor blackColor];
+        
+        
+        
+        // Label Allignments
+        bookTitle.textAlignment         = NSTextAlignmentCenter;
+        bookAuthorLabel.textAlignment   = NSTextAlignmentRight;
+        bookAuthorText.textAlignment    = NSTextAlignmentLeft;
+        bookPubLabel.textAlignment      = NSTextAlignmentRight;
+        bookPubText.textAlignment       = NSTextAlignmentLeft;
+        bookSummaryLabel.textAlignment  = NSTextAlignmentLeft;
+        bookSummaryText.textAlignment   = NSTextAlignmentCenter;
+        bookTopicsLabel.textAlignment   = NSTextAlignmentLeft;
+        bookTopicsText.textAlignment    = NSTextAlignmentCenter;
+        
+        // Label Line Counts
+        bookSummaryText.numberOfLines   = 14;
+        bookTopicsText.numberOfLines    = 4;
+        
+    }
+    // add labels to view as subviews
+    [self.view addSubview:bookTitle];
+    [self.view addSubview:bookAuthorLabel];
+    [self.view addSubview:bookAuthorText];
+    [self.view addSubview:bookPubLabel];
+    [self.view addSubview:bookPubText];
+    [self.view addSubview:bookSummaryLabel];
+    [self.view addSubview:bookSummaryText];
+    [self.view addSubview:bookTopicsLabel];
+    [self.view addSubview:bookTopicsText];
 
 }
 
