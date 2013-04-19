@@ -46,7 +46,19 @@
         }
     };
     
+    [super viewWillAppear:animated];
     
+    // alloc and init uilabels with position, w and h
+    bookTitle        = [[UILabel alloc] initWithFrame:CGRectMake(10.0f,   10.0f, 300.0f,  20.0f)]; //left, top, width, height
+    bookAuthorLabel  = [[UILabel alloc] initWithFrame:CGRectMake(10.0f,   40.0f, 100.0f,  20.0f)];
+    bookAuthorText   = [[UILabel alloc] initWithFrame:CGRectMake(120.0f,  40.0f, 190.0f,  20.0f)];
+    bookPubLabel     = [[UILabel alloc] initWithFrame:CGRectMake(10.0f,   70.0f, 100.0f,  20.0f)];
+    bookPubText      = [[UILabel alloc] initWithFrame:CGRectMake(120.0f,  70.0f, 190.0f,  20.0f)];
+    bookSummaryLabel = [[UILabel alloc] initWithFrame:CGRectMake(10.0f,  100.0f, 300.0f,  20.0f)];
+    bookSummaryText  = [[UILabel alloc] initWithFrame:CGRectMake(10.0f,  120.0f, 300.0f, 210.0f)];
+    bookTopicsLabel  = [[UILabel alloc] initWithFrame:CGRectMake(10.0f,  340.0f, 300.0f,  20.0f)];
+    bookTopicsText   = [[UILabel alloc] initWithFrame:CGRectMake(10.0f,  370.0f, 300.0f,  80.0f)];
+
     
     
 }
