@@ -48,9 +48,9 @@
 
 @interface ViewController : UIViewController
 {
-UILabel *bookTitle;         // books title
-UILabel *bookAuthorLabel;   // author label
-UILabel *bookAuthorText;    // books author
+    UILabel *bookTitle;         // books title
+    UILabel *bookAuthorLabel;   // author label
+    UILabel *bookAuthorText;    // books author
     UILabel *bookPubLabel;      // published label
     UILabel *bookPubText;       // published Text
     UILabel *bookSummaryLabel;  // summary label
@@ -61,3 +61,4 @@ UILabel *bookAuthorText;    // books author
     
 }
 @end
+
