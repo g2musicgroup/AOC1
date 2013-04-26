@@ -36,6 +36,11 @@
     [self displayAlertWithString:compareString];
     [self displayAlertWithString:myNumberAddString];
     
+    //Call the Append function with two NSStrings.
+    //Capture the result and display a UIAlertView with the appended string using displayAlertWithString.
+    NSString *appendString = [self append:@"Gawain " with:@"Bracy"];
+    [self displayAlertWithString:appendString];
+    
     //Create a function called Add.
     -(int)add:(int)number1 with:(int)number2
     {
@@ -57,6 +62,17 @@
             return NO;
         }
     }
+    
+    //Create a function called Append take two NSStrings.
+    -(NSString *)append:(NSString *)string1 with:(NSString *)string2
+    {
+        //return a new NSString containing the appended strings using an NSMutableString and the Append method.
+        NSMutableString *appendedString = [NSMutableString stringWithString:string1];
+        NSString *string = [appendedString stringByAppendingString:string2];
+        return string;
+    }
+    
+
     
     
     [super viewDidLoad];
