@@ -28,6 +28,36 @@
     NSString *myNumberAddString = [self append:theNumberText with:numberToString];
     [self displayAlertWithString:myNumberAddString];
     
+    //Call the Compare function with two integer values. If Compare returns YES, display an UIAlertView both with the input values and the result using the DisplayAlertWithString function.
+    int int1 = 7;
+    int int2 = 11;
+    BOOL compareNumber = [self compare:int1 with:int2];
+    NSString *compareString = [NSString stringWithFormat:@"Numbers %d and %d are equal? %@", int1, int2, compareNumber?@"YES":@"NO"];
+    [self displayAlertWithString:compareString];
+    [self displayAlertWithString:myNumberAddString];
+    
+    //Create a function called Add.
+    -(int)add:(int)number1 with:(int)number2
+    {
+        //take two NSInteger or int types
+        //return result of an addition between these two.
+        return number1 + number2;
+    }
+    
+    //Create a BOOL function called Compare that takes two NSInteger values.
+    -(BOOL)compare:(int)number1 with:(int)number2
+    {
+        //Return YES or NO based on whether the values are equal.
+        if (number1 == number2)
+        {
+            return YES;
+        }
+        else
+        {
+            return NO;
+        }
+    }
+    
     
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
