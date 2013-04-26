@@ -10,10 +10,16 @@
 
 @interface ViewController : UIViewController
 
--(int)add:(int)number1 with:(int)number2;
--(BOOL)compare:(int)number1 with:(int)number2;
--(NSString*)append:(NSString*)string1 with:(NSString*)string2;
--(void)displayAlertWithString:(NSString*)string;
--(int)sum;
+// Function to add one integer to another
+- (NSInteger)Add:(NSInteger)x addTo:(NSInteger)y;
+
+// Function to check if integers are the same answers YES or NO
+- (BOOL)Compare:(NSInteger)x compareTo:(NSInteger)y;
+
+// Function to append a string to another string
+- (NSString*)Append:(NSString*)originalString addString:(NSString*)addString;
+
+// function to take NSString argument param
+- (void)DisplayAlertWithString:(NSString*)alertMessage titleString:(NSString*)titleString buttonString:(NSString*)buttonString;
 
 @end
