@@ -2,12 +2,13 @@
 //  AppDelegate.m
 //  testApp
 //
-//  Created by Gawain Bracy II on 4/11/13.
+//  Created by Gawain Bracy II on 5/9/13.
 //  Copyright (c) 2013 Gawain Bracy II. All rights reserved.
 //
 
 #import "AppDelegate.h"
 
+#import "ViewController.h"
 
 @implementation AppDelegate
 
@@ -20,87 +21,10 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
-    /* Step 2 */
-    NSLog(@"Step 2");
-    float foodIsGood = 3.14159265359;
-    NSLog(@"%d spaghetti is delicious, but %.2f is best!", (int)foodIsGood,(float)foodIsGood);
-    
-    
-    /* Step 3 */
-    NSLog(@"Step 3");
-    int plates = 5;
-    bool editable = YES;
-    
-    if ((plates > 0)&&(editable == YES))
-    {
-        NSLog(@"Please eat until you are full");
-    }
-    else if ((plates == foodIsGood) || (editable == NO))
-    {
-        NSLog(@"plates are numbers, you cant eat them, get back to number crunching");
-    }
-    
-    
-    
-    /* Step 4 */
-    NSLog(@"Step 4");
-    int kobe = 24;
-    if (kobe == 24)
-    {
-        NSLog(@"%d is the new MVP!", kobe);
-    }
-    else if (kobe > 24)
-    {
-        NSLog(@"%d is not the new MVP", kobe);
-    }
-    else
-    {
-        int off = (kobe-24);
-        NSLog(@"You seem to have %d hopes too many", off);
-    };
-    
-    
-    /* step 5 */
-    NSLog(@"Step 5");
-    for (int x=0;x < 10; x++)
-    {
-        NSLog(@"%d attempt at performing a single loop", x);
-    };
-    
-    
-    /* step 6 */
-    NSLog(@"Step 6");
-    for (int y=40;y>0;y--)
-    {
-        NSLog(@"%d is great", y);
-        while (y<30) {
-            y = y-2;
-            NSLog(@"%d is great", y);
-            if (y <= 10) { break; };
-        };
-    };
-    
-    
-    /* step 7 */
-    NSLog(@"Step 7");
-    int lifePoints = 20;
-    bool dead = TRUE;
-    do {
-        NSLog(@"Are you still in the game?!");
-        while ( lifePoints > 10 )
-        {
-            lifePoints--;
-            NSLog(@"::Adam:: Yes");
-        }
-        NSLog(@"No!");
-        dead = FALSE;
-    } while (lifePoints > 10);
-    
-    NSLog(@"Done!");
-    
     self.window = [[[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]] autorelease];
     // Override point for customization after application launch.
-    self.window.backgroundColor = [UIColor whiteColor];
+    self.viewController = [[[ViewController alloc] initWithNibName:@"ViewController" bundle:nil] autorelease];
+    self.window.rootViewController = self.viewController;
     [self.window makeKeyAndVisible];
     return YES;
 }
