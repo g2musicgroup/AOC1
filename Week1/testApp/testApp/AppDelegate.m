@@ -8,26 +8,45 @@
 
 #import "AppDelegate.h"
 
-#import "ViewController.h"
-
 @implementation AppDelegate
-
-- (void)dealloc
-{
-    [_window release];
-    [_viewController release];
-    [super dealloc];
-}
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
-    self.window = [[[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]] autorelease];
+    self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     // Override point for customization after application launch.
-    self.viewController = [[[ViewController alloc] initWithNibName:@"ViewController" bundle:nil] autorelease];
-    self.window.rootViewController = self.viewController;
+    self.window.backgroundColor = [UIColor whiteColor];
     [self.window makeKeyAndVisible];
-    return YES;
-}
+    
+    // BOOL object
+    BOOL isRain = YES;
+    
+    // float variables
+    float clouds = 2.1f;
+    float airTemp = 71.8f;
+    float xFinland = clouds * 1.3f;
+    float xSpain = clouds * 1.1f;
+    float xLondon = 1.15f;
+    float cold = clouds * airTemp ;
+    
+    // int variables - I'm not casting any of the floats to int(s) in the wind var this is a rough idea
+    int wind = 8;
+    int convertCold = (int)cold;
+    int countries = (xFinland + xSpain + xLondon)/3 * clouds;
+    int yFinland = 7;
+    int yLondon = 18;
+    int ySpain = 13;
+    
+    // print out of the vaiables wind, airTemp, cold & Finland the other two variables show the required example of forcasting
+    NSLog(@"wind =%d", wind);
+    NSLog(@"air temp =%.2f", airTemp);
+    NSLog(@"Cold float = %.2f, Finland int = %d", cold, convertCold);
+    NSLog(@"Distance to Finland =%d", yFinland);
+    NSLog(@"Distance to London =%d", yLondon);
+    NSLog(@"Distance to Spain =%d", ySpain);
+    
+    
+    
+
 
 - (void)applicationWillResignActive:(UIApplication *)application
 {
@@ -37,7 +56,7 @@
 
 - (void)applicationDidEnterBackground:(UIApplication *)application
 {
-    // Use this method to release shared resources, save user data, invalidate timers, and store enough application state information to restore your application to its current state in case it is terminated later. 
+    // Use this method to release shared resources, save user data, invalidate timers, and store enough application state information to restore your application to its current state in case it is terminated later.
     // If your application supports background execution, this method is called instead of applicationWillTerminate: when the user quits.
 }
 

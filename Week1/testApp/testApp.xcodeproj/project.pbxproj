@@ -17,7 +17,6 @@
 		394CD3EE173C9ED100696819 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 394CD3ED173C9ED100696819 /* Default@2x.png */; };
 		394CD3F0173C9ED100696819 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 394CD3EF173C9ED100696819 /* Default-568h@2x.png */; };
 		394CD3F3173C9ED100696819 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 394CD3F2173C9ED100696819 /* ViewController.m */; };
-		394CD3F6173C9ED100696819 /* ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 394CD3F4173C9ED100696819 /* ViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,7 +35,6 @@
 		394CD3EF173C9ED100696819 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		394CD3F1173C9ED100696819 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		394CD3F2173C9ED100696819 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		394CD3F5173C9ED100696819 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/ViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -87,7 +85,6 @@
 				394CD3E9173C9ED100696819 /* AppDelegate.m */,
 				394CD3F1173C9ED100696819 /* ViewController.h */,
 				394CD3F2173C9ED100696819 /* ViewController.m */,
-				394CD3F4173C9ED100696819 /* ViewController.xib */,
 				394CD3E0173C9ED100696819 /* Supporting Files */,
 			);
 			path = testApp;
@@ -162,7 +159,6 @@
 				394CD3EC173C9ED100696819 /* Default.png in Resources */,
 				394CD3EE173C9ED100696819 /* Default@2x.png in Resources */,
 				394CD3F0173C9ED100696819 /* Default-568h@2x.png in Resources */,
-				394CD3F6173C9ED100696819 /* ViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -188,14 +184,6 @@
 				394CD3E3173C9ED100696819 /* en */,
 			);
 			name = InfoPlist.strings;
-			sourceTree = "<group>";
-		};
-		394CD3F4173C9ED100696819 /* ViewController.xib */ = {
-			isa = PBXVariantGroup;
-			children = (
-				394CD3F5173C9ED100696819 /* en */,
-			);
-			name = ViewController.xib;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
