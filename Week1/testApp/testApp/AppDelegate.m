@@ -36,15 +36,46 @@
     int yLondon = 18;
     int ySpain = 13;
     
-    // print out of the vaiables wind, airTemp, cold & Finland the other two variables show the required example of forcasting
-    NSLog(@"wind =%d", wind);
+    // print out of the vaiables countries, airTemp, cold & Finland the other two variables show the required example of forcasting
+    NSLog(@"Countries =%d", countries);
     NSLog(@"air temp =%.2f", airTemp);
     NSLog(@"Cold float = %.2f, Finland int = %d", cold, convertCold);
     NSLog(@"Distance to Finland =%d", yFinland);
     NSLog(@"Distance to London =%d", yLondon);
     NSLog(@"Distance to Spain =%d", ySpain);
     
+    //data set up for nested loop in a loop - got some help from; Objective-C programming the big nerd ranch guide and Learning Cocoa with Objective-C
+    NSString * string = @"Chris,Steven,Helan,Dave,Stephanie,Mariam";
+    NSString * string1 = @"Finland,London,Spain";
+    NSString * string2 = @"2in,2.7in,3.2in,5in,7.2in,9.8in,Flood";
     
+    
+    NSArray * array = [string componentsSeparatedByString:@","];
+    NSArray * array1 = [string1 componentsSeparatedByString:@","];
+    NSArray * array2 = [string2 componentsSeparatedByString:@","];
+    //NSArray * array3 = [string3 componentsSeparatedByString:@","];    ------not used------
+    //NSArray * array4 = [string4 componentsSeparatedByString:@","];    ------not used------
+    //NSObject * data = [array2,array3,array4];  Trying to fill my placeholders for historical data in the nested loop loop
+    //int count = [array1 count];                                       ------not used------
+    int count1 = [array2 count];
+    
+    int historicalData =  3;
+    
+    
+    // Trying to fill my placeholders for historical data in the nested loop loop
+    /*char arrrayWaveData[8][3] =                                       ------not used------
+     {
+     {@"Encuentro,Seahorse,Caberet"},
+     {@"2ft",},
+     {},
+     {},
+     {},
+     {},
+     {},
+     {}
+     };
+     */
+}
     
 
 
